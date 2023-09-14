@@ -1,7 +1,7 @@
 {
   "generator-jhipster": {
     "applicationType": "monolith",
-    "authenticationType": "jwt",
+    "authenticationType": "oauth2",
     "baseName": "jhipster_sample_app",
     "blueprints": [],
     "buildTool": "maven",
@@ -14,13 +14,14 @@
     "cypressAudit": true,
     "cypressCoverage": true,
     "databaseType": "sql",
-    "devDatabaseType": "postgresql",
+    "devDatabaseType": "h2Disk",
     "devServerPort": 4200,
     "dtoSuffix": "DTO",
     "enableGradleEnterprise": false,
     "enableHibernateCache": true,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
+    "entities": [],
     "entitySuffix": "",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.9.3",
@@ -42,7 +43,7 @@
     "skipCheckLengthOfIdentifier": false,
     "skipClient": false,
     "skipFakeData": false,
-    "skipUserManagement": false,
+    "skipUserManagement": true,
     "testFrameworks": ["cypress"],
     "websocket": false,
     "withAdminUi": true
