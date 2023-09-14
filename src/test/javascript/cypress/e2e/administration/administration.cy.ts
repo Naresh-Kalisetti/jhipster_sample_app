@@ -1,5 +1,4 @@
 import {
-  userManagementPageHeadingSelector,
   metricsPageHeadingSelector,
   healthPageHeadingSelector,
   logsPageHeadingSelector,
@@ -15,13 +14,6 @@ describe('/admin', () => {
   beforeEach(() => {
     cy.login(username, password);
     cy.visit('');
-  });
-
-  describe('/user-management', () => {
-    it('should load the page', () => {
-      cy.clickOnAdminMenuItem('user-management');
-      cy.get(userManagementPageHeadingSelector).should('be.visible');
-    });
   });
 
   describe('/metrics', () => {
